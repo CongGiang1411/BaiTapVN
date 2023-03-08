@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Bai2_Lab2 {
     public static void main(String[] args) {
         float songuyen=0;
-        Scanner nhap=new Scanner(System.in);
+        try(Scanner nhap=new Scanner(System.in)){
         do{
         System.out.print("Nhap so nguyen: ");
         songuyen=nhap.nextFloat();
@@ -15,7 +15,7 @@ public class Bai2_Lab2 {
         }
         else{
             System.out.println(songuyen+ " la so nguyen le");
-        }
+        }}
                 
     }
 }
