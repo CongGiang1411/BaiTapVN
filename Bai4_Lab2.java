@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Bai4_Lab2 {
     public static void main(String[] args) {
         int nhap=0;
-        Scanner nhapso=new Scanner(System.in);
+        try(Scanner nhapso=new Scanner(System.in)){
         do{
             System.out.print("nhap so ban mong muon : ");
             nhap=nhapso.nextInt();
@@ -37,5 +37,5 @@ public class Bai4_Lab2 {
             break;}
         }
         nhapso.close();
-    }
+    }}
 }
