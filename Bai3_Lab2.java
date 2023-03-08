@@ -6,7 +6,7 @@ public class Bai3_Lab2 {
     public static void main(String[] args) {
         int namsinh=0,tuoi;
         String ten="";
-        Scanner nhap=new Scanner(System.in);
+        try(Scanner nhap=new Scanner(System.in)){
         System.out.print("nhap ten : ");
         ten=nhap.nextLine();
         System.out.print("nhap nam sinh");
@@ -22,5 +22,5 @@ public class Bai3_Lab2 {
         System.out.println("ban "+ten+" da gia!");
     }
         nhap.close();
-    }
+    }}
 }
