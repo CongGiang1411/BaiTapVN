@@ -30,7 +30,7 @@ public class Bai1_Lab2 {
     public static void main(String[] args) {
         Bai1_Lab2 Bai1=new Bai1_Lab2();
         float a=0,b=0;
-        Scanner nhap=new Scanner(System.in);
+        try(Scanner nhap=new Scanner(System.in)){
         System.out.print("nhap so a : ");
         a=nhap.nextFloat();
         System.out.print("nhap so b : ");
@@ -38,5 +38,5 @@ public class Bai1_Lab2 {
         Bai1.tinhtoan(a, b);
         Bai1.sosanh(a, b);
         nhap.close();
-    }
+    }}
 }
